@@ -8,22 +8,10 @@
   let HTMLanchor = anchor ? anchor : overtitle;
 
   let navigation = { nextEl: '.cards__next' }
-  let breakpoints = {
-    '320': {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    '640': {
-      slidesPerView: 2,
-      spaceBetween: 40,
-    },
-    '1200': {
-      slidesPerView: 4,
-      spaceBetween: 50,
-    },
-  }
+  
   import { Navigation } from 'swiper'
   import { Swiper, SwiperSlide } from 'swiper/svelte'
+  import { swiperBreakpoints } from '../utilities.js'
 </script>
 
 <div class="wrapper" id="{HTMLanchor}">
@@ -38,7 +26,7 @@
         class="cards__container"
         spaceBetween={50}
         slidesPerView={4}
-        breakpoints={breakpoints}
+        breakpoints={swiperBreakpoints}
         on:slideChange={() => {}}
         on:swiper={(e) => {}}
       >

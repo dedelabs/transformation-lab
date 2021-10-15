@@ -30,3 +30,18 @@ export let smoothScroll = () => {
   })
   return buttons
 }
+
+export let swiperBreakpoints = {
+  '480': {
+    slidesPerView: 1,
+    spaceBetween: 0,
+  },
+  '720': {
+    slidesPerView: 2,
+    spaceBetween: 0,
+  },
+  '1180': {
+    slidesPerView: 4,
+    spaceBetween: 0,
+  },
+}
