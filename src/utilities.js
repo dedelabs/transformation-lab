@@ -40,7 +40,7 @@ export let swiperBreakpoints = {
     slidesPerView: 2,
     spaceBetween: 0,
   },
-  '1280': {
+  '1180': {
     slidesPerView: 4,
     spaceBetween: 0,
   },
