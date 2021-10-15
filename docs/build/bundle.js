@@ -10707,7 +10707,7 @@ var app = (function () {
     			}
 
     			attr_dev(div, "class", "carousel__slides carousel__slides--no-slider");
-    			add_location(div, file$7, 46, 6, 1273);
+    			add_location(div, file$7, 46, 6, 1339);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -10798,7 +10798,7 @@ var app = (function () {
     			attr_dev(h3, "class", "carousel__title");
     			add_location(h3, file$7, 24, 6, 621);
     			attr_dev(div, "class", "carousel__next");
-    			add_location(div, file$7, 44, 6, 1213);
+    			add_location(div, file$7, 44, 6, 1279);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
@@ -10873,9 +10873,9 @@ var app = (function () {
     			t4 = space();
     			html_tag.a = t0;
     			attr_dev(h4, "class", "carousel__slide__title");
-    			add_location(h4, file$7, 50, 12, 1448);
+    			add_location(h4, file$7, 50, 12, 1514);
     			attr_dev(div, "class", "carousel__slide");
-    			add_location(div, file$7, 48, 10, 1374);
+    			add_location(div, file$7, 48, 10, 1440);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -10908,9 +10908,9 @@ var app = (function () {
     	return block;
     }
 
-    // (38:10) <SwiperSlide>
+    // (38:10) <SwiperSlide class="carousel__slide">
     function create_default_slot_1(ctx) {
-    	let html_tag;
+    	let div;
     	let raw_value = /*slide*/ ctx[7].image + "";
     	let t0;
     	let h4;
@@ -10923,19 +10923,21 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			html_tag = new HtmlTag();
+    			div = element("div");
     			t0 = space();
     			h4 = element("h4");
     			t1 = text$1(t1_value);
     			t2 = space();
     			t3 = text$1(t3_value);
     			t4 = space();
-    			html_tag.a = t0;
+    			attr_dev(div, "class", "carousel__slide__image");
+    			add_location(div, file$7, 38, 12, 1056);
     			attr_dev(h4, "class", "carousel__slide__title");
-    			add_location(h4, file$7, 39, 12, 1064);
+    			add_location(h4, file$7, 39, 12, 1130);
     		},
     		m: function mount(target, anchor) {
-    			html_tag.m(raw_value, target, anchor);
+    			insert_dev(target, div, anchor);
+    			div.innerHTML = raw_value;
     			insert_dev(target, t0, anchor);
     			insert_dev(target, h4, anchor);
     			append_dev(h4, t1);
@@ -10944,12 +10946,11 @@ var app = (function () {
     			insert_dev(target, t4, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*slides*/ 4 && raw_value !== (raw_value = /*slide*/ ctx[7].image + "")) html_tag.p(raw_value);
-    			if (dirty & /*slides*/ 4 && t1_value !== (t1_value = /*slide*/ ctx[7].title + "")) set_data_dev(t1, t1_value);
+    			if (dirty & /*slides*/ 4 && raw_value !== (raw_value = /*slide*/ ctx[7].image + "")) div.innerHTML = raw_value;			if (dirty & /*slides*/ 4 && t1_value !== (t1_value = /*slide*/ ctx[7].title + "")) set_data_dev(t1, t1_value);
     			if (dirty & /*slides*/ 4 && t3_value !== (t3_value = /*slide*/ ctx[7].description + "")) set_data_dev(t3, t3_value);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) html_tag.d();
+    			if (detaching) detach_dev(div);
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(h4);
     			if (detaching) detach_dev(t2);
@@ -10962,7 +10963,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(38:10) <SwiperSlide>",
+    		source: "(38:10) <SwiperSlide class=\\\"carousel__slide\\\">",
     		ctx
     	});
 
@@ -10976,6 +10977,7 @@ var app = (function () {
 
     	swiperslide = new Swiper_slide({
     			props: {
+    				class: "carousel__slide",
     				$$slots: { default: [create_default_slot_1] },
     				$$scope: { ctx }
     			},

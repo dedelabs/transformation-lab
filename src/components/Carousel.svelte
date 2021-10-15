@@ -35,8 +35,8 @@
         on:swiper={(e) => {}}
       >
         {#each slides as slide}
-          <SwiperSlide>
-            {@html slide.image}
+          <SwiperSlide class="carousel__slide">
+            <div class="carousel__slide__image">{@html slide.image}</div>
             <h4 class="carousel__slide__title">{slide.title}</h4>
             {slide.description}
           </SwiperSlide>
