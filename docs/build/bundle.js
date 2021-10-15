@@ -961,6 +961,7 @@ var app = (function () {
     			{
     				type: "Bubbles",
     				overtitle: "Why it matters",
+    				anchor: "Why",
     				title: "We give shape to complex<br />sustainable territorial transformations",
     				bubbles: [
     					{
@@ -1016,6 +1017,7 @@ var app = (function () {
     			{
     				type: "Carousel",
     				overtitle: "How it works",
+    				anchor: "How",
     				title: "An immersive and inclusive<br />learning process",
     				slides: [
     					{
@@ -1053,6 +1055,7 @@ var app = (function () {
     			{
     				type: "Cards",
     				overtitle: "What territories do",
+    				anchor: "What",
     				title: "We drive tangible territorial results",
     				cards: [
     					{
@@ -1076,6 +1079,7 @@ var app = (function () {
     			{
     				type: "BgCards",
     				overtitle: "Who can we help",
+    				anchor: "Who",
     				title: "Anyone supporting the future of<br />sustainable territorial transformation",
     				cards: [
     					{

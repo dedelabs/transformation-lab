@@ -85,6 +85,7 @@ pages:
             zindex: 60
       - type: Bubbles
         overtitle: Why it matters
+        anchor: Why
         title: We give shape to complex<br />sustainable territorial transformations
         bubbles:
           - text: More people
@@ -113,6 +114,7 @@ pages:
             color: "#60C971"
       - type: Carousel
         overtitle: How it works
+        anchor: How
         title: An immersive and inclusive<br />learning process
         slides:
           - image: <svg width="71" height="48" viewBox="0 0 71 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="24" r="17.5" transform="rotate(90 18 24)" fill="#60C971" style="mix-blend-mode:multiply"/><circle cx="18" cy="24" r="17.5" transform="rotate(90 18 24)" stroke="#60C971"/><ellipse cx="47" cy="24" rx="24" ry="24" transform="rotate(90 47 24)" fill="#646FFF" style="mix-blend-mode:multiply"/></svg>
@@ -135,6 +137,7 @@ pages:
             description: Learnings are recognised through the European Credit Transfer and Accumulation System (ECTS) and through Open Badges (digital credentials)
       - type: Cards
         overtitle: What territories do
+        anchor: What
         title: We drive tangible territorial results
         cards:
           - title: Community Enterprise
@@ -147,6 +150,7 @@ pages:
             description: Promote the catalog to travelers, remote workers, enterprises, schools, locals and citizens through OTAs, DMOs or territorial portal
       - type: BgCards
         overtitle: Who can we help
+        anchor: Who
         title: Anyone supporting the future of<br />sustainable territorial transformation
         cards:
           - firstLine: Public Administration
