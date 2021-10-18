@@ -32,6 +32,10 @@ export let smoothScroll = () => {
 }
 
 export let swiperBreakpoints = {
+  '1': {
+    slidesPerView: 1,
+    spaceBetween: 0,
+  },
   '480': {
     slidesPerView: 1,
     spaceBetween: 0,
