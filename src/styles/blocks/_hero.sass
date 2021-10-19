@@ -1,4 +1,4 @@
-.hero 
+.hero
   margin: 0 auto
   display: block
   padding: $space-unit*2 5rem
@@ -6,6 +6,9 @@
   background-size: cover
   background-repeat: no-repeat
   position: relative
+  text-align: center
+  +at-breakpoint('lte-lap-landscape')
+    padding: $space-unit*2 1rem
   &__content
     position: relative
     z-index: 101
