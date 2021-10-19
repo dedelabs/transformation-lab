@@ -14,7 +14,7 @@ pages:
   - name: Home
     path: /
     components:
-      - type: Hero
+      - type: Hero 
         title: Transformation Lab
         subtitle: Knowledge for sustainable territories
         cta:

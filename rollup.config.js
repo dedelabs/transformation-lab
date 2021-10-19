@@ -44,18 +44,21 @@ export default {
 	},
 	plugins: [
 		json(),
-		{
-			name: 'watch-external',
-			buildStart(){
-				this.addWatchFile('src/data.yml')
-			}
-		},
+		// {
+		// 	name: 'watch-external',
+		// 	buildStart(){
+		// 		this.addWatchFile('src/data.yml')
+		// 	},
+		// 	generateBundle(foo) {
+		// 		console.log(foo)
+		// 	}
+		// },
 		scss({
 			output: 'docs/app.css',
 			outputStyle: 'compressed',
 			// indentedSyntax: true,
 			sass: require('sass'),
-			watch: ['src/styles', 'src/styles/blocks', 'src/styles/formats', 'src/styles/functions', 'src/styles/mixins', 'src/styles/variables']
+			watch: ['src/styles', 'src/styles/blocks', 'src/styles/formats', 'src/styles/functions', 'src/styles/mixins', 'src/styles/variables', 'src/data.yml']
 		}),
 		svelte({
 			compilerOptions: {
