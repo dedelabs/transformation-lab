@@ -44,6 +44,12 @@ export default {
 	},
 	plugins: [
 		json(),
+		{
+			name: 'watch-external',
+			buildStart(){
+				this.addWatchFile('src/data.yml')
+			}
+		},
 		scss({
 			output: 'docs/app.css',
 			outputStyle: 'compressed',
