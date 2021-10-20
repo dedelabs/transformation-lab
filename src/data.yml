@@ -21,7 +21,7 @@ pages:
           text: scroll down
           arrow: bottom
         shapes: 
-          - top: 90
+          - top: 83
             left: 90
             size: 200
             color: "#6A72DC"
@@ -34,6 +34,10 @@ pages:
           - top: 18
             left: -9
             size: 150
+            color: "#60C971"
+          - top: 7
+            left: 95
+            size: 70
             color: "#60C971"
           - top: 90
             left: 20
@@ -50,23 +54,23 @@ pages:
         description: We support territories in their sustainable innovation and change processes through a personalised and laboratorial learning process capable of generating social, economic and environmental impact in an open, transparent, participated and long-term way
         shapes:
           - top: 65
-            left: 63
+            left: 53
             size: 150
             color: "#60C971"
             zindex: 60
           - top: 79
-            left: 73
+            left: 63
             size: 50
             color: "#6A72DC"
             zindex: 70
       - type: BlockWithImage
         imagePosition: left
         imagePath: knowledge.jpg
-        overtitle: Impact business
+        overtitle: collective intelligence
         title: Community Enterprise
         description: We transfer knowledge on entrepreneurship and sustainability to activate a community enterprise fully owned and operated by it members, capable to measure its impact and to express its territorial value through experiences embodying territorial identity and culture
         shapes: 
-          - top: 75
+          - top: 60
             left: -10
             size: 200
             color: "#6A72DC"
@@ -98,7 +102,7 @@ pages:
             color: "#60C971"
           - text: Knowledge transfer
             color: "#6A72DC"
-          - text: Attract new funds
+          - text: New funds attraction
             color: "#60C971"
           - text: Impact and data culture
             color: "#6A72DC"
@@ -108,14 +112,14 @@ pages:
             color: "#6A72DC"
           - text: Digital transformation
             color: "#60C971"
-          - text: Local incubation hub 
+          - text: Terrirorial incubation hub 
             color: "#6A72DC"
           - text: Autonomy
             color: "#60C971"
       - type: Carousel
         overtitle: How it works
         anchor: How
-        title: An immersive and inclusive<br />learning process
+        title: An immersive learning process
         slides:
           - image: <svg width="71" height="48" viewBox="0 0 71 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="24" r="17.5" transform="rotate(90 18 24)" fill="#60C971" style="mix-blend-mode:multiply"/><circle cx="18" cy="24" r="17.5" transform="rotate(90 18 24)" stroke="#60C971"/><ellipse cx="47" cy="24" rx="24" ry="24" transform="rotate(90 47 24)" fill="#646FFF" style="mix-blend-mode:multiply"/></svg>
             title: Personalised
@@ -136,22 +140,24 @@ pages:
             title: Recognition
             description: Learnings are recognised through the European Credit Transfer and Accumulation System (ECTS) and through Open Badges (digital credentials)
       - type: Cards
-        overtitle: What territories do
+        overtitle: What we enable
         anchor: What
         title: We drive tangible territorial results
+        slider: true
         cards:
           - title: Community Enterprise
-            description: Community enterprise owned and operated by the active members and open to anyone who want to generate a positive impact
+            description: We enable the creation of a community enterprise owned and operated by its active members and open to anyone interested in the territorial sustainable development
           - title: Impact Management
-            description: Identify, plan, execute, measure, monitor and transparently communicate the actions toward a positive impact
+            description: We apply the theory of change and other standard methodologies in order to identify, plan, execute, measure, monitor and transparently storytell the territorial transformation
           - title: Territorial Catalog
-            description: Co-create a territorial catalog with experiences, products and services representing the local culture and identity
-          - title: Multi-Channel Distribution
-            description: Promote the catalog to travelers, remote workers, enterprises, schools, locals and citizens through OTAs, DMOs or territorial portal
+            description: We co-design a territorial catalog cantaining the local experiences, products and services and representing the authenticity of the territorial culture, identity and heritage
+          - title: Multi-Channel
+            description: We help the territory to promote the terrritorial catalog to travelers, remote workers, enterprises, schools, locals and citizens through OTAs, DMOs or community marketplace
       - type: BgCards
         overtitle: Who can we help
         anchor: Who
         title: Anyone supporting the future of<br />sustainable territorial transformation
+        slider: true
         cards:
           - firstLine: Public Administration
             secondLine: As well as Governments & European cooperation bodies
