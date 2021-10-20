@@ -39,7 +39,7 @@
           {#each bubbles as bubble}
             <SwiperSlide>
               <div class="{baseClass}__bubble">
-                <div class="{baseClass}__bubble__text">{bubble.text}</div>
+                <div class="{baseClass}__bubble__text" style="color: {bubble.color}">{bubble.text}</div>
                 <div class="{baseClass}__bubble__bg" style="border-radius: {generateBlob()}; background-color: {bubble.color}"></div>
               </div>
             </SwiperSlide>
@@ -52,7 +52,7 @@
         {#each bubbles as bubble}
           <div class="{baseClass}__bubble-container">
             <div class="{baseClass}__bubble">
-              <div class="{baseClass}__bubble__text">{bubble.text}</div>
+              <div class="{baseClass}__bubble__text" style="color: {bubble.color}">{bubble.text}</div>
               <div class="{baseClass}__bubble__bg" style="border-radius: {generateBlob()}; background-color: {bubble.color}"></div>
             </div>
           </div>
