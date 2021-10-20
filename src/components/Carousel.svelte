@@ -29,7 +29,7 @@
         navigation={navigation}
         class="carousel__slides"
         spaceBetween={50}
-        slidesPerView={4}
+        slidesPerView={3}
         breakpoints={swiperBreakpoints}
         on:slideChange={() => {}}
         on:swiper={(e) => {}}
