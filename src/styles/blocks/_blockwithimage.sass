@@ -1,5 +1,5 @@
 $radius: 5rem
-.block
+.blockwithimage
   align-items: center
   position: relative
   z-index: 50
@@ -8,13 +8,13 @@ $radius: 5rem
     flex-wrap: wrap
   &--left
     flex-direction: row-reverse
-    .block__image
+    .blockwithimage__image
       // border-radius: 0 $radius $radius 0 
       +at-breakpoint('lte-lap-landscape')
         margin-left: -5rem
   &--right
     flex-direction: row
-    .block__image
+    .blockwithimage__image
       +at-breakpoint('lte-lap-landscape')
         margin-right: -5rem
       // border-radius: $radius 0 0 $radius 

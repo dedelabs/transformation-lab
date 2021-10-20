@@ -1,18 +1,16 @@
 <script>
-  import DedeLogo from './DedeLogo.svelte';
-  import Hamburger from 'svelte-hamburgers';
-  import { fly } from 'svelte/transition';
+  let open = false
 
-  
+  import DedeLogo from './DedeLogo.svelte'
+  import Hamburger from 'svelte-hamburgers'
+  import { fly } from 'svelte/transition'
   import { afterUpdate } from 'svelte'
-  import { smoothScroll } from '../utilities.js';
+  import { smoothScroll } from '../utilities.js'
   
   afterUpdate(() => {
     let buttons = smoothScroll()
     buttons.forEach((button) => { button.addEventListener('click', () => { open = false })})
   })
-
-  let open;
 </script>
 
 <header class="wrapper header">

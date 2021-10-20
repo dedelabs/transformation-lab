@@ -1,20 +1,20 @@
 <script>
-  export let color;
-  export let top;
-  export let left;
-  export let size;
-  export let zindex;
-
-  import { generateBlob, random } from "../utilities.js";
+  export let color
+  export let top
+  export let left
+  export let size
+  export let zindex
 
   let randomPosition = () => {
-    return `${random(0, 100)}%`;
-  };
+    return `${random(0, 100)}%`
+  }
 
-  $: topPos = isNaN(top) ? randomPosition() : `${top}%`;
-  $: leftPos = isNaN(left) ? randomPosition() : `${left}%`;
-  $: dimensions = isNaN(size) ? `${random(20, 200)}px` : `${size}px`;
-  $: zIndex = isNaN(zindex) ? random(1, 100) : zindex;
+  import { generateBlob, random } from "../utilities.js"
+
+  $: topPos = isNaN(top) ? randomPosition() : `${top}%`
+  $: leftPos = isNaN(left) ? randomPosition() : `${left}%`
+  $: dimensions = isNaN(size) ? `${random(20, 200)}px` : `${size}px`
+  $: zIndex = isNaN(zindex) ? random(1, 100) : zindex
 </script>
 
 <div
