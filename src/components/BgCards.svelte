@@ -1,28 +1,33 @@
 <script>
-  export let title = "Title for hero component";
-  export let overtitle = "overtitle";
-  export let cards = [];
-  export let slider = false;
-  export let anchor;
+  export let title = "Title for hero component"
+  export let overtitle = "overtitle"
+  export let cards = []
+  export let slider = false
+  export let anchor
+  export let type = 'BgCards'
+  export let shapes = 0
+  export let colors = ['red', 'yellow', 'blue']
 
   let HTMLanchor = anchor ? anchor : overtitle;
+  let baseClass = type.toLowerCase()
+  let navigation = { nextEl: `.${baseClass}__next` }
 
-  let navigation = { nextEl: '.bg-cards__next' }
   import { Navigation } from 'swiper'
   import { Swiper, SwiperSlide } from 'swiper/svelte'
-  import { swiperBreakpoints } from '../utilities.js';
+  import { swiperBreakpoints } from '../utilities.js'
+  import Blobs from './Blobs.svelte'
 </script>
 
 <div class="wrapper" id="{HTMLanchor}">
-  <div class="bg-cards">
-    <div class="bg-cards__overtitle">{overtitle}</div>
-    <h3 class="bg-cards__title">{@html title}</h3>
+  <div class="{baseClass}">
+    <div class="{baseClass}__overtitle">{overtitle}</div>
+    <h3 class="{baseClass}__title">{@html title}</h3>
     {#if slider}
       <Swiper
         modules={[Navigation]}
         loop="{true}"
         navigation={navigation}
-        class="bg-cards__container"
+        class="{baseClass}__container"
         spaceBetween={50}
         slidesPerView={3}
         breakpoints={swiperBreakpoints}
@@ -31,33 +36,34 @@
       >
         {#each cards as card}
           <SwiperSlide>
-            <div class="bg-cards__card">
-              <div class="bg-cards__card__title {card.secondLine ? 'bg-cards__card__title--with-subtitle' : ''}">
+            <div class="{baseClass}__card">
+              <div class="{baseClass}__card__title {card.secondLine ? '{baseClass}__card__title--with-subtitle' : ''}">
                 <strong>{@html card.firstLine}</strong><br />
                 {#if card.secondLine}
                   <small>{@html card.secondLine}</small>
                 {/if}
               </div>
-              <div class="bg-cards__card__image" style="background-image: url('images/{card.imagePath}')"></div>
+              <div class="{baseClass}__card__image" style="background-image: url('images/{card.imagePath}')"></div>
             </div>
           </SwiperSlide>
         {/each}
       </Swiper>
-      <div class="bg-cards__next">Next -></div>
+      <div class="{baseClass}__next">Next -></div>
     {:else}
-      <div class="bg-cards__container">
+      <div class="{baseClass}__container">
         {#each cards as card}
-          <div class="bg-cards__card">
-            <div class="bg-cards__card__title {card.secondLine ? 'bg-cards__card__title--with-subtitle' : ''}">
+          <div class="{baseClass}__card">
+            <div class="{baseClass}__card__title {card.secondLine ? '{baseClass}__card__title--with-subtitle' : ''}">
               <strong>{@html card.firstLine}</strong><br />
               {#if card.secondLine}
                 <small>{@html card.secondLine}</small>
               {/if}
             </div>
-            <div class="bg-cards__card__image" style="background-image: url('images/{card.imagePath}')"></div>
+            <div class="{baseClass}__card__image" style="background-image: url('images/{card.imagePath}')"></div>
           </div>
         {/each}
       </div>
     {/if}
   </div>
+  <Blobs shapes={shapes} colors="{colors}"></Blobs>
 </div>

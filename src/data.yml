@@ -64,6 +64,7 @@ pages:
             color: "#6A72DC"
             zindex: 70
       - type: BlockWithImage
+        anchor: impactBusiness
         imagePosition: left
         imagePath: knowledge.jpg
         overtitle: collective intelligence
@@ -76,6 +77,7 @@ pages:
             color: "#6A72DC"
             zindex: 70
       - type: BlockWithImage
+        anchor: dataDriven
         imagePosition: right
         imagePath: data.jpg
         overtitle: data driven

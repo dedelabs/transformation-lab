@@ -1,5 +1,5 @@
 $radius: 5rem
-.block
+.blockwithimage
   align-items: center
   position: relative
   z-index: 50
@@ -11,7 +11,7 @@ $radius: 5rem
     .block__content
       +at-breakpoint('lap')
         padding: 4rem 1em 4em 4rem
-    .block__image
+    .blockwithimage__image
       // border-radius: 0 $radius $radius 0 
       +at-breakpoint('lte-lap-landscape')
         margin-left: -5rem
@@ -20,7 +20,7 @@ $radius: 5rem
     .block__content
       +at-breakpoint('lap')
         padding: 4rem 4em 4em 1rem
-    .block__image
+    .blockwithimage__image
       +at-breakpoint('lte-lap-landscape')
         margin-right: -5rem
       // border-radius: $radius 0 0 $radius 

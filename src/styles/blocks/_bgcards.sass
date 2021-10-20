@@ -1,7 +1,7 @@
 @use "sass:math"
 $card-spacing: 2rem
 
-.bg-cards
+.bgcards
   text-align: center
   padding-top: $space-unit*6
   &__overtitle
@@ -44,12 +44,12 @@ $card-spacing: 2rem
           display: block
           transition: margin-top 0.3s ease-out, opacity 0.1s ease-out
     &:hover
-      .bg-cards__card__title
+      .bgcards__card__title
         small
           margin-top: 0
           opacity: 1
           transition: margin-top 0.3s ease-in, opacity 0.7s ease-in
-      .bg-cards__card__image
+      .bgcards__card__image
         transition: background-size 0.3s ease-in
         background-size: 120%
         filter: brightness(0.7) grayscale(0.7)
