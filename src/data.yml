@@ -132,6 +132,22 @@ pages:
             color: "#6A72DC"
           - text: Autonomy
             color: "#60C971"
+      - type: Cards
+        overtitle: Use cases
+        anchor: use-cases
+        title: An attractive sustainable territory
+        slider: true
+        cards:
+          - title: Enterprises
+            description: Can buy a team-building weekend as part of the company CSR and educational strategy and get a report proving how the money spent are used to generate a positive impact
+          - title: Remote Workers
+            description: Can rent an accommodation for one month and becomes a temporary citizen of the territory actively participating to the community activities and governance
+          - title: Travelers
+            description: Can buy a multi-day transformative experience to get in touch with the authentic local identity and culture through the work done by an active sustainable community
+          - title: Schools
+            description: Can live immersive non-formal education experiences (inclusive by design) enabling skills transfer and awareness on local culture, territorial identity and sustainability
+          - title: Locals
+            description: Can be incentivised to actively participate in the community organisation, aligning sustainable transformation actions with economic rewards
       - type: BgCards
         overtitle: what we offer
         anchor: Micromaster
