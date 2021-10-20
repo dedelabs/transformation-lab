@@ -89,6 +89,20 @@ pages:
             size: 120
             color: "#60C971"
             zindex: 60
+      - type: Cards
+        overtitle: What we do
+        anchor: What
+        title: We drive tangible territorial results
+        slider: true
+        cards:
+          - title: Territorial Catalog
+            description: We co-design a territorial catalog cantaining the local experiences, products and services and representing the authenticity of the territorial culture, identity and heritage
+          - title: Impact Management
+            description: We apply the theory of change methodology in order to identify, plan, execute, measure, monitor and transparently storytell the territorial transformation and generated impact
+          - title: Community Enterprise
+            description: We enable the creation of a community enterprise owned and operated by its active members and open to anyone interested in the territorial sustainable development
+          - title: Multi-Channel
+            description: We help the territory to promote the terrritorial catalog to travelers, remote workers, enterprises, schools, locals and citizens through OTAs, DMOs or community marketplace
       - type: Bubbles
         overtitle: Why it matters
         anchor: Why
@@ -118,6 +132,32 @@ pages:
             color: "#6A72DC"
           - text: Autonomy
             color: "#60C971"
+      - type: BgCards
+        overtitle: what we offer
+        anchor: Micromaster
+        title: Personalised micromasters <br />based on territorial needs
+        slider: true
+        cards:
+          - firstLine: Territorial Mapping
+            imagePath: micromasters/mapping.png
+          - firstLine: Experience Design
+            imagePath: micromasters/experience.png
+          - firstLine: Impact Management
+            imagePath: micromasters/impact.png
+          - firstLine: Organisation Design
+            imagePath: micromasters/organisation.png
+          - firstLine: Impact Storytelling
+            imagePath: micromasters/storytelling.png
+          - firstLine: Brand Identity
+            imagePath: micromasters/brand.jpg
+          - firstLine: Business Development
+            imagePath: micromasters/business-dev.png
+          - firstLine: Marketing & Distribution
+            imagePath: micromasters/marketing.jpg
+          - firstLine: Accountability
+            imagePath: micromasters/accountability.png
+          - firstLine: Fundraising
+            imagePath: micromasters/fundraising.png
       - type: Carousel
         overtitle: How it works
         anchor: How
@@ -141,24 +181,10 @@ pages:
           - image: <svg width="63" height="50" viewBox="0 0 63 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60.3685 21.7325C62.6268 23.3261 62.6269 26.6754 60.3685 28.269L30.8062 49.1296C28.1565 50.9994 24.5 49.1044 24.5 45.8614L24.5 4.14014C24.5 0.897142 28.1565 -0.997856 30.8062 0.871914L60.3685 21.7325Z" fill="#646FFF" style="mix-blend-mode:multiply"/><path d="M36.3685 21.7325C38.6268 23.3261 38.6269 26.6753 36.3685 28.269L6.80623 49.1296C4.15652 50.9993 0.500001 49.1043 0.500001 45.8613L0.500003 4.14011C0.500003 0.897111 4.15652 -0.997887 6.80623 0.871884L36.3685 21.7325Z" fill="#60C971" style="mix-blend-mode:multiply"/></svg>
             title: Recognition
             description: Learnings are recognised through the European Credit Transfer and Accumulation System (ECTS) and through Open Badges (digital credentials)
-      - type: Cards
-        overtitle: What we enable
-        anchor: What
-        title: We drive tangible territorial results
-        slider: true
-        cards:
-          - title: Community Enterprise
-            description: We enable the creation of a community enterprise owned and operated by its active members and open to anyone interested in the territorial sustainable development
-          - title: Impact Management
-            description: We apply the theory of change and other standard methodologies in order to identify, plan, execute, measure, monitor and transparently storytell the territorial transformation
-          - title: Territorial Catalog
-            description: We co-design a territorial catalog cantaining the local experiences, products and services and representing the authenticity of the territorial culture, identity and heritage
-          - title: Multi-Channel
-            description: We help the territory to promote the terrritorial catalog to travelers, remote workers, enterprises, schools, locals and citizens through OTAs, DMOs or community marketplace
       - type: BgCards
-        overtitle: Who can we help
+        overtitle: To who
         anchor: Who
-        title: Anyone supporting the future of<br />sustainable territorial transformation
+        title: Anyone interested in the future of<br />sustainable territorial transformation
         slider: true
         cards:
           - firstLine: Public Administration
@@ -182,29 +208,3 @@ pages:
           - firstLine: Citizens
             secondLine: Wanted to actively participate
             imagePath: targets/citizens.png
-      - type: BgCards
-        overtitle: what we can do
-        anchor: Micromaster
-        title: Our Micromaster
-        slider: true
-        cards:
-          - firstLine: Territorial Mapping
-            imagePath: micromasters/mapping.png
-          - firstLine: Experience Design
-            imagePath: micromasters/experience.png
-          - firstLine: Impact Management
-            imagePath: micromasters/impact.png
-          - firstLine: Organisation Design
-            imagePath: micromasters/organisation.png
-          - firstLine: Impact Storytelling
-            imagePath: micromasters/storytelling.png
-          - firstLine: Brand Identity
-            imagePath: micromasters/brand.jpg
-          - firstLine: Business Development
-            imagePath: micromasters/business-dev.png
-          - firstLine: Marketing & Distribution
-            imagePath: micromasters/marketing.jpg
-          - firstLine: Accountability
-            imagePath: micromasters/accountability.png
-          - firstLine: Fundraising
-            imagePath: micromasters/fundraising.png

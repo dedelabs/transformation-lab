@@ -20,22 +20,18 @@
     <div class="header__menu--mobile" transition:fly="{{ y: 200, duration: 500 }}" >
       <ul class="header__menu">
         <li class="header__menu__item"><span data-smoothscroll="#Solution">Solution</span></li>
-        <li class="header__menu__item"><span data-smoothscroll="#Why">Why</span></li>
-        <li class="header__menu__item"><span data-smoothscroll="#How">How</span></li>
-        <li class="header__menu__item"><span data-smoothscroll="#What">What</span></li>
-        <li class="header__menu__item"><span data-smoothscroll="#Who">Who</span></li>
-        <li class="header__menu__item"><span data-smoothscroll="#Micromaster">Micromaster</span></li>
+        <li class="header__menu__item"><span data-smoothscroll="#What">Services</span></li>
+        <li class="header__menu__item"><span data-smoothscroll="#Micromaster">Micromasters</span></li>
+        <li class="header__menu__item"><span data-smoothscroll="#Who">To who</span></li>
       </ul>
       <!-- <a class="header__button header__button--mobile" href="##">Open call</a> -->
     </div>
   {/if}
   <ul class="header__menu header__menu--desk">
     <li class="header__menu__item"><span data-smoothscroll="#Solution">Solution</span></li>
-    <li class="header__menu__item"><span data-smoothscroll="#Why">Why</span></li>
-    <li class="header__menu__item"><span data-smoothscroll="#How">How</span></li>
-    <li class="header__menu__item"><span data-smoothscroll="#What">What</span></li>
-    <li class="header__menu__item"><span data-smoothscroll="#Who">Who</span></li>
-    <li class="header__menu__item"><span data-smoothscroll="#Micromaster">Micromaster</span></li>
+    <li class="header__menu__item"><span data-smoothscroll="#What">Services</span></li>
+    <li class="header__menu__item"><span data-smoothscroll="#Micromaster">Micromasters</span></li>
+    <li class="header__menu__item"><span data-smoothscroll="#Who">To who</span></li>
   </ul>
   <!-- <a class="header__button header__button--desk" href="##">Open call</a> -->
 </header>
