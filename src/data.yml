@@ -21,12 +21,12 @@ pages:
           text: scroll down
           arrow: bottom
         shapes: 
-          - top: 83
-            left: 90
+          - top: 53
+            left: 94
             size: 200
             color: "#6A72DC"
             zindex: 10
-          - top: 73
+          - top: 65
             left: 89
             size: 50
             color: "#60C971"
@@ -54,12 +54,12 @@ pages:
         description: We support territories in their sustainable innovation and change processes through a personalised and laboratorial learning process capable of generating social, economic and environmental impact in an open, transparent, participated and long-term way
         shapes:
           - top: 65
-            left: 53
+            left: 57
             size: 150
             color: "#60C971"
             zindex: 60
           - top: 79
-            left: 63
+            left: 67
             size: 50
             color: "#6A72DC"
             zindex: 70
