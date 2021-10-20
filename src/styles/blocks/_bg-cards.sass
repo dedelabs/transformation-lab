@@ -3,13 +3,13 @@ $card-spacing: 2rem
 
 .bg-cards
   text-align: center
-  padding-top: 3rem
+  padding-top: $space-unit*6
   &__overtitle
     +lines-both
     letter-spacing: $overtitle_spacing
   &__title
     text-align: center
-    padding-bottom: 3rem
+    padding-bottom: $space-unit*4
   &__container
     display: flex
     flex-wrap: wrap
@@ -17,7 +17,7 @@ $card-spacing: 2rem
     flex-grow: 1
     border-radius: $card-spacing
     padding: 1.5rem
-    height: 300px
+    height: 250px
     text-align: left
     position: relative
     overflow: hidden
@@ -26,7 +26,7 @@ $card-spacing: 2rem
     +at-breakpoint(lap)
       flex: calc(50% - ($card-spacing * 2))
     +at-breakpoint(desk)
-      flex: calc(25% - ($card-spacing * 2))
+      flex: calc(33% - ($card-spacing * 2))
     &__title
       text-shadow: 0 0 10px $base_body_color
       position: absolute
