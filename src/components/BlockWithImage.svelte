@@ -12,6 +12,7 @@
   let HTMLanchor = anchor ? anchor : title
   let baseClass = type.toLowerCase()
 
+  import { generateBlob, random } from "../utilities.js"
   import Blobs from './Blobs.svelte'
 </script>
 
@@ -22,7 +23,7 @@
       <h2 class="{baseClass}__title">{title}</h2>
       <div class="{baseClass}__description">{description}</div>
     </div>
-    <div class="{baseClass}__image" style="background-image: url('images/{imagePath}')">
+    <div class="{baseClass}__image" style="background-image: url('images/{imagePath}'); border-radius: {generateBlob(30, 70)}">
     </div>
   </div>
   <Blobs shapes={shapes} colors="{colors}"></Blobs>
