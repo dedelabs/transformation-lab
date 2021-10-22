@@ -37,7 +37,7 @@
         {#each cards as card}
           <SwiperSlide>
             <div class="{baseClass}__card">
-              <div class="{baseClass}__card__title {card.secondLine ? '{baseClass}__card__title--with-subtitle' : ''}">
+              <div class="{baseClass}__card__title {card.secondLine ? `${baseClass}__card__title--with-subtitle` : ''}">
                 <strong>{@html card.firstLine}</strong><br />
                 {#if card.secondLine}
                   <small>{@html card.secondLine}</small>
@@ -53,7 +53,7 @@
       <div class="{baseClass}__container">
         {#each cards as card}
           <div class="{baseClass}__card">
-            <div class="{baseClass}__card__title {card.secondLine ? '{baseClass}__card__title--with-subtitle' : ''}">
+            <div class="{baseClass}__card__title {card.secondLine ? `${baseClass}__card__title--with-subtitle` : ''}">
               <strong>{@html card.firstLine}</strong><br />
               {#if card.secondLine}
                 <small>{@html card.secondLine}</small>
