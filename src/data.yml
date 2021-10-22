@@ -200,7 +200,7 @@ pages:
       - type: BgCards
         overtitle: To who
         anchor: Who
-        title: Anyone interested in the future of<br />sustainable territorial transformation
+        title: A long-term partner for anyone interested in the future of sustainable territorial transformation
         slider: true
         cards:
           - firstLine: Public Administration
@@ -212,15 +212,9 @@ pages:
           - firstLine: Enterprises
             secondLine: Focused on supporting impact and sustainability
             imagePath: targets/enterprises.png
-          - firstLine: Impact Investors
-            secondLine: As Angels Investors or VCs blending profit with impact
-            imagePath: targets/investors.png
           - firstLine: Foundations
             secondLine: As well as NGOs & Civil Society Organisations
             imagePath: targets/foundations.png
-          - firstLine: Universities
-            secondLine: As well as Public and Private Research Centers
-            imagePath: targets/universities.png
           - firstLine: Citizens
             secondLine: Wanted to actively participate
             imagePath: targets/citizens.png
