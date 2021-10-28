@@ -151,7 +151,7 @@ pages:
       - type: BgCards
         overtitle: what we offer
         anchor: Micromaster
-        title: Personalised micromasters <br />based on territorial needs
+        title: Personalised group of micromasters <br />based on territorial needs
         slider: true
         cards:
           - firstLine: Territorial Mapping
