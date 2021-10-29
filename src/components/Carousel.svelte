@@ -10,7 +10,7 @@
 
   let HTMLanchor = anchor ? anchor : overtitle
   let baseClass = type.toLowerCase()
-  let navigation = { nextEl: `.${baseClass}__next` }
+  let navigation = { nextEl: `.${baseClass}__next`, prevEl: `.${baseClass}__prev` }
 
   import { Navigation } from 'swiper'
   import { Swiper, SwiperSlide } from 'swiper/svelte'
@@ -27,7 +27,7 @@
       <h3 class="{baseClass}__title">{@html title}</h3>
       <Swiper
         modules={[Navigation]}
-        loop="{true}"
+        loop="{false}"
         navigation={navigation}
         class="{baseClass}__slides"
         spaceBetween={50}
@@ -44,7 +44,10 @@
           </SwiperSlide>
         {/each}
       </Swiper>
-      <div class="{baseClass}__next">Next -></div>
+      <div class="{baseClass}__navigation">
+        <div class="{baseClass}__prev">{'<- Prev'}</div>
+        <div class="{baseClass}__next">Next -></div>
+      </div>
     {:else}
       <div class="{baseClass}__slides {baseClass}__slides--no-slider">
         {#each slides as slide}

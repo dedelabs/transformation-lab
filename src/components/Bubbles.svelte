@@ -10,7 +10,7 @@
 
   let HTMLanchor = anchor ? anchor : overtitle;
   let baseClass = type.toLowerCase()
-  let navigation = { nextEl: `.${baseClass}__next` }
+  let navigation = { nextEl: `.${baseClass}__next`, prevEl: `.${baseClass}__prev` }
 
   import { generateBlob } from '../utilities.js'
   import { Navigation } from 'swiper'
@@ -27,7 +27,7 @@
       <div class="{baseClass}__bubbles">
         <Swiper
           modules={[Navigation]}
-          loop="{true}"
+          loop="{false}"
           navigation={navigation}
           class="{bubbles}__slides"
           spaceBetween={50}
@@ -47,7 +47,10 @@
           {/each}
         </Swiper>
       </div>
-      <div class="{baseClass}__next">Next -></div>
+      <div class="{baseClass}__navigation">
+        <div class="{baseClass}__prev">{'<- Prev'}</div>
+        <div class="{baseClass}__next">Next -></div>
+      </div>
     {:else}
       <div class="{baseClass}__bubbles">
         {#each bubbles as bubble}
