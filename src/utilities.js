@@ -49,3 +49,5 @@ export let swiperBreakpoints = {
     spaceBetween: 0,
   },
 }
+
+export let swiperNavigation = (baseClass) => { return { nextEl: `.${baseClass}__next`, prevEl: `.${baseClass}__prev` }}
