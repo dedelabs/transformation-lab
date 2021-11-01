@@ -29,7 +29,7 @@
         <Swiper
           modules={[Navigation]}
           loop="{false}"
-          navigation={navigation}
+          navigation={navigation['navigation']}
           class="{bubbles}__slides"
           spaceBetween={50}
           slidesPerView={4}
@@ -48,7 +48,7 @@
           {/each}
         </Swiper>
       </div>
-      <SwiperNavigationButtons baseClass="{baseClass}"></SwiperNavigationButtons>
+      <SwiperNavigationButtons baseClass="{baseClass}" hash="{navigation['hash']}"></SwiperNavigationButtons>
     {:else}
       <div class="{baseClass}__bubbles">
         {#each bubbles as bubble}

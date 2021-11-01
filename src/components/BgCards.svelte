@@ -27,7 +27,7 @@
       <Swiper
         modules={[Navigation]}
         loop="{false}"
-        navigation={navigation}
+        navigation={navigation['navigation']}
         class="{baseClass}__container"
         spaceBetween={50}
         slidesPerView={3}
@@ -49,7 +49,7 @@
           </SwiperSlide>
         {/each}
       </Swiper>
-      <SwiperNavigationButtons baseClass="{baseClass}"></SwiperNavigationButtons>
+      <SwiperNavigationButtons baseClass="{baseClass}" hash="{navigation['hash']}"></SwiperNavigationButtons>
     {:else}
       <div class="{baseClass}__container">
         {#each cards as card}

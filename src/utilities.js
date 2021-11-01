@@ -50,4 +50,9 @@ export let swiperBreakpoints = {
   },
 }
 
-export let swiperNavigation = (baseClass) => { return { nextEl: `.${baseClass}__next`, prevEl: `.${baseClass}__prev` }}
+function randomString() { return Math.random().toString(16).substr(2, 8) }
+
+export let swiperNavigation = (baseClass) => { 
+  let hash = randomString()
+  return { 'navigation': { nextEl: `.${baseClass}__next--${hash}`, prevEl: `.${baseClass}__prev--${hash}` }, 'hash': hash }
+}
