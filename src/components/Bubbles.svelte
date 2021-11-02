@@ -8,15 +8,16 @@
   export let shapes = 0
   export let colors = ['red', 'yellow', 'blue']
 
-  let HTMLanchor = anchor ? anchor : overtitle;
-  let baseClass = type.toLowerCase()
-  let navigation = { nextEl: `.${baseClass}__next` }
-
   import { generateBlob } from '../utilities.js'
   import { Navigation } from 'swiper'
   import { Swiper, SwiperSlide } from 'swiper/svelte'
-  import { swiperBreakpoints } from '../utilities.js'
   import Blobs from './Blobs.svelte'
+  import SwiperNavigationButtons from './SwiperNavigationButtons.svelte'
+  import { swiperBreakpoints, swiperNavigation } from '../utilities.js'
+
+  let HTMLanchor = anchor ? anchor : overtitle;
+  let baseClass = type.toLowerCase()
+  let navigation =swiperNavigation(baseClass)
 </script>
 
 <div class="wrapper" id="{HTMLanchor}">
@@ -27,8 +28,8 @@
       <div class="{baseClass}__bubbles">
         <Swiper
           modules={[Navigation]}
-          loop="{true}"
-          navigation={navigation}
+          loop="{false}"
+          navigation={navigation['navigation']}
           class="{bubbles}__slides"
           spaceBetween={50}
           slidesPerView={4}
@@ -47,7 +48,7 @@
           {/each}
         </Swiper>
       </div>
-      <div class="{baseClass}__next">Next -></div>
+      <SwiperNavigationButtons baseClass="{baseClass}" hash="{navigation['hash']}"></SwiperNavigationButtons>
     {:else}
       <div class="{baseClass}__bubbles">
         {#each bubbles as bubble}
