@@ -5,6 +5,9 @@
   "engines": {
     "node": ">=12"
   },
+  "sass": {
+    "includePaths": ["./node_modules"]
+  }, 
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",

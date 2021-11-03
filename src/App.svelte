@@ -3,17 +3,10 @@
 	import "swiper/css/navigation"
   import 'swiper/css'
 
-	import BgCards from './components/BgCards.svelte'
-	import BlockWithImage from './components/BlockWithImage.svelte'
-	import Bubbles from './components/Bubbles.svelte'
-	import Cards from './components/Cards.svelte'
-	import Carousel from './components/Carousel.svelte'
+	import { BgCards, BlockWithImage, Bubbles, Cards, Carousel, Hero, Spacer, Text, Title } from 'dede-svelte-components'
+
 	import Footer from './components/Footer.svelte'
 	import Header from './components/Header.svelte'
-	import Hero from './components/Hero.svelte'
-	import Spacer from './components/Spacer.svelte'
-	import Text from './components/Text.svelte'
-	import Title from './components/Title.svelte'
 
 	let loadedComponents = {
 		"BgCards": BgCards,
@@ -26,6 +19,7 @@
 		"Text": Text,
 		"Title": Title
 	}
+	
 	// Hardcoded before routing
 	$: components = data.pages.filter((p) => p.name == 'Home')[0].components;
 
